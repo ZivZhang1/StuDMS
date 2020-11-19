@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="gongyu"
+  id="myeclipse.1279271979625"
+  context-root="/gongyu"
+  j2ee-spec="5.0"
+  archive="gongyu.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

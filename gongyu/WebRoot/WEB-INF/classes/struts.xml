@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="successDel">/common/del_success.jsp</result>
+            <result name="successUpdate">/common/update_success.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminManage" class="adminAction" method="adminManage">
+            <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+           <action name="adminEditPre" class="adminAction" method="adminEditPre">
+             <result name="success">/admin/index/adminEdit.jsp</result>
+        </action>
+          <action name="adminEdit" class="adminAction" method="adminEdit">
+             <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+        <action name="stuAdd" class="stuAction" method="stuAdd">
+        </action>
+        <action name="stuDel" class="stuAction" method="stuDel">
+        </action>
+        <action name="stuMana" class="stuAction" method="stuMana">
+            <result name="success">/admin/stu/stuMana.jsp</result>
+        </action>
+        <action name="stuSearch" class="stuAction" method="stuSearch">
+            <result name="success">/admin/stu/stuMana.jsp</result>
+        </action>
+        
+        
+        
+          <action name="stuEditPre" class="stuAction" method="stuEditPre">
+             <result name="success">/admin/stu/stuEdit.jsp</result>
+        </action>
+        <action name="stuEdit1" class="stuAction" method="stuEdit1">
+             <result name="success">/admin/stu/stuMana.jsp</result>
+        </action>
+        
+    
+          <action name="stuQuery" class="stuAction" method="stuQuery">
+             <result name="success">/admin/stu/stuMana.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <action name="jingxiaoshijian" class="shijianAction" method="jingxiaoshijian">
+            <result name="success">/admin/shijian/jingxiaoshijian.jsp</result>
+        </action>
+        <action name="jingxiaoshijianEdit" class="shijianAction" method="jingxiaoshijianEdit">
+        </action>
+        <action name="xidengshijian" class="shijianAction" method="xidengshijian">
+            <result name="success">/admin/shijian/xidengshijian.jsp</result>
+        </action>
+        <action name="xidengshijianEdit" class="shijianAction" method="xidengshijianEdit">
+        </action>
+        
+        
+        <action name="susheAdd" class="susheAction" method="susheAdd">
+        </action>
+        <action name="susheDel" class="susheAction" method="susheDel">
+        </action>
+        <action name="susheMana" class="susheAction" method="susheMana">
+            <result name="success">/admin/sushe/susheMana.jsp</result>
+        </action>
+        
+        
+        
+             <action name="susheEditPre" class="susheAction" method="susheEditPre">
+             <result name="success">/admin/sushe/susheEdit.jsp</result>
+        </action>
+        <action name="susheEdit1" class="susheAction" method="susheEdit1">
+             <result name="success">/admin/sushe/susheMana.jsp</result>
+        </action>
+        
+              <action name="susheQuery" class="susheAction" method="susheQuery">
+             <result name="success">/admin/sushe/susheMana.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="laifangAdd" class="laifangAction" method="laifangAdd">
+        </action>
+        <action name="laifangDel" class="laifangAction" method="laifangDel">
+        </action>
+        <action name="laifangMana" class="laifangAction" method="laifangMana">
+            <result name="success">/admin/laifang/laifangMana.jsp</result>
+        </action>
+        <action name="laifangQushijianAdd" class="laifangAction" method="laifangQushijianAdd">
+        </action>
+        
+         <action name="laifangEditPre" class="laifangAction" method="laifangEditPre">
+             <result name="success">/admin/laifang/laifangEdit.jsp</result>
+        </action>
+        <action name="laifangEdit1" class="laifangAction" method="laifangEdit1">
+             <result name="success">/admin/laifang/laifangMana.jsp</result>
+        </action>
+             
+          <action name="laifangQuery" class="laifangAction" method="laifangQuery">
+             <result name="success">/admin/laifang/laifangMana.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="weishengAdd" class="weishengAction" method="weishengAdd">
+        </action>
+        <action name="weishengDel" class="weishengAction" method="weishengDel">
+        </action>
+        <action name="weishengMana" class="weishengAction" method="weishengMana">
+            <result name="success">/admin/weisheng/weishengMana.jsp</result>
+        </action>
+        <action name="weishengManaPaiming" class="weishengAction" method="weishengManaPaiming">
+            <result name="success">/admin/weisheng/weishengManaPaiming.jsp</result>
+        </action>
+        
+        
+        <action name="baoxiuAddMy" class="baoxiuAction" method="baoxiuAddMy">
+        </action>
+        <action name="baoxiuManaMy" class="baoxiuAction" method="baoxiuManaMy">
+            <result name="success">/astu/baoxiu/baoxiuManaMy.jsp</result>
+        </action>
+        <action name="baoxiuShouli" class="baoxiuAction" method="baoxiuShouli">
+        </action>
+        <action name="baoxiuMana" class="baoxiuAction" method="baoxiuMana">
+            <result name="success">/admin/baoxiu/baoxiuMana.jsp</result>
+        </action>
+        
+        <action name="baoxiuDel" class="baoxiuAction" method="baoxiuDel">
+        </action> 
+        
+          <action name="baoxiuDel1" class="baoxiuAction" method="baoxiuDel1">
+        </action> 
+        
+        
+    </package>
+</struts>
